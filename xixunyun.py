@@ -11,11 +11,11 @@ sign_gps = os.environ["SIGN_GPS"]  # 签到坐标（注意小数点取后6位）
 longitude = sign_gps.split(",")[0] # 经度
 latitude = sign_gps.split(",")[1] # 纬度
 data = {
-  "account":202122251652,
-  "password":251652,
-  "school_id":1907,
-  "longitude":106.446724,
-  "latitude":29.531776,
+  "account":account,
+  "password":password,
+  "school_id":school_id,
+  "longitude":longitude,
+  "latitude":latitude,
   "address_name":os.environ["ADDRESS_NAME"] 
 }
 headers = {'Content-Type': 'application/json'}
